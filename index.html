@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Bootstrap</title>
-    <link type="text/css" rel="stylesheet" href="bootstrap.css"/>
+    <title>Something About Yifu Wang</title>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
     <style>
       body {
         background-color: #f6f6f6;
@@ -12,30 +12,38 @@
       .main {
         background-color: #fff;
         border: 1px solid #CCC;
-        padding: 40px;
+        padding: 30px;
       }
       .container {
-        width: 1100px;
-      }
-      .nav-list {
-        font-size: 14px;
+        max-width: 1200px;
       }
       .nav-header {
         font-size: 17px;
         text-transform: none;
         line-height: 30px;
       }
+	  .brief-intro {
+		padding-left: 10px;
+	  }
+	  .subtitle {
+		padding-left: 10px;
+	  }
+	  #my_nav_list {
+		font-size: 13px;
+	  }
     </style>
-    <link type="text/css" rel="stylesheet" href="bootstrap-responsive.css"/>
+	
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
   </head>
 <body>
 
-  <div class="container-fluid">
-    <div class="row-fluid">
-      <div class="span2">
-        <ul class="nav nav-list">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-3" id="sidebar" role="navigation">
+        <ul class="nav nav-list" id="my_nav_list">
 			<li><a href="#title">Something About Yifu Wang</a></li>
-			<li><a href="#my_first_proj">My First Project</a></li>
+			<li><a href="#my_first_proj">First Project</a></li>
 			<li><a href="#renesas_car_competition">Take Part In Renesas Car Competition</a></li>
 			<li><a href="#attend_mathematical_contest">Attend Mathematical Modeling Contest</a></li>
 			<li><a href="#a_first_attempt_to_research">A First Attempt To Research</a></li>
@@ -43,115 +51,118 @@
 			<li><a href="#to_be_continued">To Be Continued...</a></li>
 		</ul>
       </div>
-      <div class="span9 main">
-        <a name="title"></a><h1>Something About Yifu Wang<a class="anchorlink" href="#title"></a></h1>
-<p>There are something I feel pround of during my 4 years as an undergraduate in Dalian University of Technology. It will just cost 5 minutes to take a brief view, thanks! </p>
-<a name="my_first_proj"></a><h2>My First Project<a class="anchorlink" href="#my_first_proj"></a></h2>
-<p>Although it is simple and crude when I see the code now, I can still feel the passion interests of </p>
+      <div class="col-md-9 main" >
+        <a name="title"></a><h1 class="page-header text-center">Something About Yifu Wang<a class="anchorlink" href="#title"></a></h1>
+		<p class="lead">Thank you for taking the time to visit. Here are something I feel pround of during my 4 years as an undergraduate in Dalian University of Technology. It will just cost you 5 minutes to take a brief view. </p>
 
-<a name="renesas_car_competition"></a><h2>Take Part In Renesas Car Competition<a class="anchorlink" href="#renesas_car_competition"></a></h2>
-<p>In first grade I learned that 5 &gt; 3 and 2 &lt; 7. Maybe some arrows. 1 -&gt; 2 -&gt; 3. 9 &lt;- 8 &lt;- 7.</p>
-<p>Triangles man! a^2 + b^2 = c^2</p>
-<a name="attend_mathematical_contest"></a><h2>Attend Mathematical Modeling Contest<a class="anchorlink" href="#attend_mathematical_contest"></a></h2>
-<p>The above header should be an H2 tag. Now, for a list of fruits:</p>
-<ul class="list">
-<li>Red Apples</li>
-<li>Purple Grapes</li>
-<li>Green Kiwifruits</li>
-</ul>
-<p>Let&#39;s get crazy:</p>
-<ol class="list">
-<li><p>This is a list item with two paragraphs. Lorem ipsum dolor
-sit amet, consectetuer adipiscing elit. Aliquam hendrerit
-mi posuere lectus.</p>
-<p>Vestibulum enim wisi, viverra nec, fringilla in, laoreet
-vitae, risus. Donec sit amet nisl. Aliquam semper ipsum
-sit amet velit.</p>
-</li>
-<li><p>Suspendisse id sem consectetuer libero luctus adipiscing.</p>
-</li>
-</ol>
-<p>What about some code <strong>in</strong> a list? That&#39;s insane, right?</p>
-<ol class="list">
-<li><p>In Ruby you can map like this:</p>
-<pre class="prettyprint"> [&#39;a&#39;, &#39;b&#39;].map { |x| x.uppercase }</pre>
-</li>
-<li><p>In Rails, you can do a shortcut:</p>
-<pre class="prettyprint"> [&#39;a&#39;, &#39;b&#39;].map(&amp;:uppercase)</pre>
-</li>
-</ol>
-<p>Some people seem to like definition lists</p>
-<dl>
-  <dt>Lower cost</dt>
-  <dd>The new version of this product costs significantly less than the previous one!</dd>
-  <dt>Easier to use</dt>
-  <dd>We&#39;ve changed the product so that it&#39;s much easier to use!</dd>
-</dl>
+<div class="panel panel-default">
+	<a name="renesas_car_competition"></a><h2 class="panel-headling subtitle">Take Part In Renesas Car Competition</a></h2>
+	<div class="panel-body">
+	<table>
+		<tr>
+			<td><img src="thumb-1878.jpg" alt="smart car competition" class="img-rounded"></td>
+			<td class="brief-intro"><p>In first grade I learned that 5 &gt; 3 and 2 &lt; 7. Maybe some arrows. 1 -&gt; 2 -&gt; 3. 9 &lt;- 8 &lt;- 7.</p>
+			<p><a class="btn btn-default" data-toggle="collapse" data-target="#text1" >Read More &raquo;</a></p>
+			</td>
+		</tr>
+	</table>
+	<div id="text1" class="collapse">
+	line1<br />
+	line2<br />
+	line3<br />
+	</div>
+	</div>
+</div>
 
-<a name="a_first_attempt_to_research"></a><h2>A First Attempt To Research<a class="anchorlink" href="#a_first_attempt_to_research"></a></h2>
-<p>Maybe you want to print <code>robot</code> to the console 1000 times. Why not?</p>
-<pre class="prettyprint">def robot_invasion
-  puts(&quot;robot &quot; * 1000)
-end</pre>
-<p>You see, that was formatted as code because it&#39;s been indented by four spaces.</p>
-<p>How about we throw some angle braces and ampersands in there?</p>
-<pre class="prettyprint">&lt;div class=&quot;footer&quot;&gt;
-    &amp;copy; 2004 Foo Corporation
-&lt;/div&gt;</pre>
-<a name="interning_in_vmware"></a><h2>Interning In vmware<a class="anchorlink" href="#interning_in_vmware"></a></h2>
-<p>Preformatted blocks are useful for ASCII art:</p>
-<pre>
-             ,-.
-    ,     ,-.   ,-.
-   / \   (   )-(   )
-   \ |  ,.>-(   )-<
-    \|,' (   )-(   )
-     Y ___`-'   `-'
-     |/__/   `-'
-     |
-     |
-     |    -hrr-
-  ___|_____________
-</pre>
+<div class="panel panel-default">
+	<a name="attend_mathematical_contest"></a><h2 class="panel-headling subtitle">Attend Mathematical Modeling Contest</h2>
+	<div class="panel-body">
+	<table>
+		<tr>
+			<td><img src="thumb-2999437.jpg" class="img-rounded"></td>
+			<td class="brief-intro"><p>In Ruby you can map like this:</p><pre class="prettyprint"> [&#39;a&#39;, &#39;b&#39;].map { |x| x.uppercase }</pre>
+			<p><a class="btn btn-default" data-toggle="collapse" data-target="#text2" >Read More &raquo;</a></p>
+			</td>
+		</tr>
+	</table>
+	<div id="text2" class="collapse">
+	line1<br />
+	line2<br />
+	line3<br />
+	</div>
+	</div>
+</div>
 
-<a name="to_be_continued"></a><h2>To Be Continued...<a class="anchorlink" href="#to_be_continued"></a></h2>
-<p>If you need to blame someone, the best way to do so is by quoting them:</p>
-<blockquote>
-<p>I, at any rate, am convinced that He does not throw dice.</p>
-</blockquote>
-<p>Or perhaps someone a little less eloquent:</p>
-<blockquote>
-<p>I wish you&#39;d have given me this written question ahead of time so I
-could plan for it... I&#39;m sure something will pop into my head here in
-the midst of this press conference, with all the pressure of trying to
-come up with answer, but it hadn&#39;t yet...</p>
-<p>I don&#39;t want to sound like
-I have made no mistakes. I&#39;m confident I have. I just haven&#39;t - you
-just put me under the spot here, and maybe I&#39;m not as quick on my feet
-as I should be in coming up with one.</p>
-</blockquote>
-<a name="contact_me"></a><h2>Table for two<a class="anchorlink" href="#contact_me"></a></h2>
-<table>
-  <tr>
-    <th>ID</th><th>Name</th><th>Rank</th>
-  </tr>
-  <tr>
-    <td>1</td><td>Tom Preston-Werner</td><td>Awesome</td>
-  </tr>
-  <tr>
-    <td>2</td><td>Albert Einstein</td><td>Nearly as awesome</td>
-  </tr>
-</table>
+<div class="panel panel-default">
+	<a name="a_first_attempt_to_research"></a><h2 class="panel-headling subtitle">A First Attempt To Research</h2>
+	<div class="panel-body">
+	<table>
+		<tr>
+			<td><img src="thumb-2999437.jpg" class="img-rounded"></td>
+			<td class="brief-intro"><p>Maybe you want to print <code>robot</code> to the console 1000 times. Why not?</p>
+			<p><a class="btn btn-default" data-toggle="collapse" data-target="#text3" >Read More &raquo;</a></p>
+			</td>
+		</tr>
+	</table>
+	<div id="text3" class="collapse">
+	line1<br />
+	line2<br />
+	line3<br />
+	</div>
+	</div>
+</div>
 
-<a name="crazy_linking_action"></a><h2>Crazy linking action<a class="anchorlink" href="#crazy_linking_action"></a></h2>
-<p>I get 10 times more traffic from <a href="http://google.com/" title="Google">Google</a> than from
-<a href="http://search.yahoo.com/" title="Yahoo Search">Yahoo</a> or <a href="http://search.msn.com/" title="MSN Search">MSN</a>.</p>
+<div class="panel panel-default">
+	<a name="interning_in_vmware"></a><h2 class="panel-headling subtitle">Interning In vmware</h2>
+	<div class="panel-body">
+	<table>
+		<tr>
+			<td><img src="thumb-2999437.jpg" class="img-rounded"></td>
+			<td class="brief-intro"><p>Preformatted blocks are useful for ASCII art:</p>
+			<p><a class="btn btn-default" data-toggle="collapse" data-target="#text4" >Read More &raquo;</a></p>
+			</td>
+		</tr>
+	</table>
+	<div id="text4" class="collapse">
+	line1<br />
+	line2<br />
+	line3<br />
+	</div>
+	</div>
+</div>
+
+<div class="panel panel-default">
+	<a name="to_be_continued"></a><h2 class="panel-headling subtitle">To Be Continued...<a class="anchorlink" href="#to_be_continued"></a></h2>
+	<div class="panel-body">
+	<table>
+		<tr>
+			<td><img src="thumb-2999437.jpg" class="img-rounded"></td>
+			<td class="brief-intro"><p>If you need to blame someone, the best way to do so is by quoting them:</p>
+				<blockquote>
+				<p>I, at any rate, am convinced that He does not throw dice.</p>
+				</blockquote>
+			<p><a class="btn btn-default" data-toggle="collapse" data-target="#text5" >Read More &raquo;</a></p>
+			</td>
+		</tr>
+	</table>
+	<div id="text5" class="collapse">
+	line1<br />
+	line2<br />
+	line3<br />
+	</div>
+	</div>
+</div>
 
       </div>
     </div>
   </div>
+<div class="footer text-center">
+    <address>
+	  <strong>Contact Me:</strong><br>
+	  <img src="mailbox.png">&nbsp;<a href="mailto:wyfisgood@gmail.com">wyfisgood@gmail.com</a> , <a href="mailto:yifuw@vmware.com">yifuw@vmware.com</a><br>
+	  <!--add github, linkedin in future-->
+	</address>
+</div>
 
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script type="text/javascript" src="bootstrap.min.js"></script>
 </body>
 </html>

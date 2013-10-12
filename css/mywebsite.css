@@ -1,0 +1,50 @@
+body {
+	background-color: #f6f6f6;
+	padding-top: 30px;
+}
+.main {
+	background-color: #fff;
+	border: 1px solid #CCC;
+	padding: 30px;
+}
+.container {
+	max-width: 1200px;
+}
+.nav-header {
+	font-size: 17px;
+	text-transform: none;
+	line-height: 30px;
+}
+.brief-intro {
+	padding-left: 10px;
+}
+.subtitle {
+	padding-left: 10px;
+}
+#my_nav_list {
+	font-size: 13px;
+}
+	  
+.events_item {
+    border-bottom: 1px solid #E2E2E2;
+    clear: both;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.events_intro {
+    float:left;
+	display:inline;
+    width: 300px;
+}
+.fr{
+	float:right;
+}
+.panel-body img{
+	float:left;
+}
+.events_intro p {
+    line-height: 1.5;
+    padding: 10px;
+	margin:0;
+}

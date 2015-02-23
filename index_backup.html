@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Something About Yifu Wang</title>
+    <<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+	<!--<link type="text/css" rel="stylesheet" href="css/mywebsite.css"/>-->
+	<link rel="stylesheet" type="text/css" href="css/blockScroll.css">
+  </head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-left">
+          <li><a href="#">Yifu Wang</a></li>
+	  <p class="navbar-text">Coding for Fun/p>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/myblog">My Blog</a></li>
+          <li><a href="Yifu_Wang_CMU_backend_intern.pdf">My resume</a></li>
+          <li><a href="https://www.linkedin.com/in/yifuwang">LinkedIn</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <div class="container">
+  
+    <div class="row">
+      <!--<div class="col-xs-2 navbar-fixed-top fr" id="sidebar" role="navigation">
+        <ul class="list-group" id="my_nav_list">
+			<li class="list-group-item"><a href="#title">Something About Yifu Wang</a></li>
+			<li class="list-group-item"><a href="#renesas_car_competition">Renesas Car Competition</a></li>
+			<li class="list-group-item"><a href="#my_projects">Projects</a></li>
+			<li class="list-group-item"><a href="#to_be_continued">To Be Continued...</a></li>
+		</ul>
+      </div>-->
+      <div class="col-md-8 main" >
+        <a name="title"></a><h1 class="page-header text-center">Something About Yifu Wang<a class="anchorlink" href="#title"></a></h1>
+		<p class="lead">Thank you for taking the time to visit. Here are some interesting details serves as an extension of my resume,
+		which will helps you have a better view of my skills and interests.</p>
+
+<div class="panel panel-default" >
+	<a name="renesas_car_competition"></a><h2 class="panel-headling subtitle">Renesas Car Competition</a></h2>
+	<div class="panel-body">
+		<div class="events_item"> 
+		  <div class="events_intro fr">
+			<p>During that period of time, I learned multiple fields:mechanics, circuit design, and algorithms. My duty is to implement control algorithm on the CPU chip.</p>
+		  </div>
+		  <div>
+		  <img src="img/CPU_board.png" class="img-rounded">
+		  <img src="img/drive_board.png" class="img-rounded">
+		</div>
+		</div>
+		<div class="events_item">
+		  <div class="events_intro fr">
+			<p>More importantly, I learned to work together with my team members toward a common objective - to make our car faster.</p>
+		  </div>
+		  <div><img src="img/group.jpg" class="img-rounded"></div>
+		</div>
+		<div class="events_item">
+		  <div class="events_intro fr">
+			<p>We represented our school to take part in the national competition.</p>
+		  </div>
+		  <div><img align="center" src="img/cars.jpg" class="img-rounded"></div>
+		</div>
+		<div class="events_item">
+		  <div class="events_intro">
+			<p>Here is the video of one of our matches.</p>
+		  </div>
+			<iframe width="420" height="315" src="//www.youtube.com/embed/uaC2eN0Q5kY?rel=0" frameborder="0" allowfullscreen></iframe>		
+		</div>
+</div>
+</div>
+
+<div class="panel panel-default">
+	<a name="my_projects"></a><h2 class="panel-headling subtitle">Projects</h2>
+	<div class="panel-body">
+		<div class="events_item"> 
+			<div class="events_intro fr">
+				<p>Big Wisdom is the team work of TartanHacks 2015, the biggest Hackathon of CMU. It predicts next three days' stock price using historical data by Bloomberg API. We used powerful Bloomberg API to fetch data, implemented time series forecasting algorithms like weighted moving average. Also, we used a machine learning model called local weighted linear regression to train historical data. We used Bootstrap for front-end, Python and PHP for back-end, and Highchart to generate beautiful trend chart.
+				<p>We discussing intensely, coding rapidly, and finished it in one day. We learned the spirit of scrum development: Moving fast, as a team.</p>
+				<p><a href="https://github.com/wangyifu/Big-Wisdom">Project Link</a></p>
+			</div>
+			<img src="img/big_wisdom.png" class="img-rounded">
+		</div>
+		<div class="events_item"> 
+			<div class="events_intro fr">
+				<p>Dota2 Counter Pick is a machine learning project using matches data to recommand hero pick. I used MongoDB to store more than 50000 historical match data, and implemented Logistic Regression and KNN using sci-kit on Python. It currently has 70% accuracy of predicting match outcomes. And there is still space to improve by adding new features.</p>
+				<p><a href="https://github.com/wangyifu/dota2predict">Project Link</a></p>
+			</div>
+			<img src="img/prediction_result.png" class="img-rounded">
+		</div>
+		<div class="events_item">
+			<div class="events_intro fr">
+				<p>Dashboard is one of the tools I did in VMware, beijing. I did all parts of this project: front end, PHP server, MySQL Database. Also, I used Highchart and D3.js to visualize data, and output report in PDF and Excel format. During this period, I learnt how to code in a more professional style, and more importantly, how to cooperate with colleagues.</p>
+			</div>
+			<div><img src="img/dashboard.png" class="img-rounded"></div>
+		</div>
+		<div class="events_item"> 
+			<div class="events_intro fr">
+				<p>Draw Something is a game runs on Linux, my part is Network Communication and Graphic. I used bezier curve to represent graph, and serialization to transmit graph data in real time.</p>
+			</div>
+			<img src="img/draw_something.png" class="img-rounded">
+		</div>
+	</div>
+</div>
+
+<div class="panel panel-default">
+	<a name="to_be_continued"></a><h2 class="panel-headling subtitle">To Be Continued...</h2>
+	<div class="panel-body">
+	<div class="events_item"> 
+		<div class="events_intro fr">
+			<p>I developed a solid fundation of software engineering in my undergraduate years. Now, my goal is to develop my knowledge in data science and machine learning, and become a engineer combines these two fields.</p>
+		</div>
+		<img src="img/online_courses.png" class="img-rounded">
+	</div>
+	<div class="events_item"> 
+		<div class="events_intro fr">
+			<p>I improved my skills and acquire knowledges in my free time from these sources:</p>
+			<p>MOOCs: Data Analysis, Machine Learning, Web Development</p>
+			<p>Books: Unix Network Programming, Computer systems: A Programmer's Perspective, Expert C Programming, Code Complete...</p>
+	  	</div>
+	  <div><img src="img/record.png" class="img-rounded"></div>
+	</div>
+	</div>
+</div>
+</div>
+</div>
+    
+  </div>
+<div class="footer text-center">
+    <address>
+	  <b>Contact Me:</b><br>
+	  <span class="glyphicon glyphicon-envelope"></span>&nbsp;<a href="mailto:yifuw@andrew.cmu.edu">yifuw@andrew.cmu.edu</a>, &nbsp;<a href="mailto:wyfisgood@gmail.com">wyfisgood@gmail.com</a><br>
+	  <a href="http://www.linkedin.com/in/yifuwang" style="text-decoration:none;"><span style="font: 80% Arial,sans-serif; color:#0783B6;"><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" width="20" height="15" alt="View yifu wang's LinkedIn profile" style="vertical-align:middle" border="0">View yifu wang's profile</span></a>
+	  <!--add github, linkedin in future-->
+	</address>
+</div>
+</body>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-43330410-1']);_gaq.push(['_trackPageview']);(function() {var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src=('https:'==document.location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga,s);})();</script>
+    <script src="js/blockScroll.js"></script>
+</html>

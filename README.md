@@ -1,4 +1,4 @@
 yifuwang.github.com
 ===================
 
-my introduction page
+My introduction page, using blockScroll plugin to generate page effect.

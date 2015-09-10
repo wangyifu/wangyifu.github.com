@@ -18,12 +18,13 @@
     $(function() {
         var blockScroller = $("#main-wrap").blockScroll({fadeBlocks:false});
         $("#Intro-button").click(function() { blockScroller.goto(1); });
-        $("#Competition-button").click(function() { blockScroller.goto(3); });
-        $("#Project-button").click(function() { blockScroller.goto(5); });
-        $("#machine-learning-button").click(function() { blockScroller.goto(6); });
-        $("#web-dev-button").click(function() { blockScroller.goto(9); });
-        $("#software-button").click(function() { blockScroller.goto(11); });
-        $("#Dot-button").click(function() { blockScroller.goto(13); });
+        $("#Internship-button").click(function() { blockScroller.goto(3); });
+        $("#Competition-button").click(function() { blockScroller.goto(4); });
+        $("#Project-button").click(function() { blockScroller.goto(6); });
+        $("#machine-learning-button").click(function() { blockScroller.goto(7); });
+        $("#software-button").click(function() { blockScroller.goto(10); });
+        $("#web-dev-button").click(function() { blockScroller.goto(12); });
+        $("#Dot-button").click(function() { blockScroller.goto(14); });
     });
 
   //tracking code
@@ -40,24 +41,31 @@
 <div id="main-wrap">
 
 <div class="intro-section">
-<h1>Want to know something about Yifu?</h1>
+<h1>Want to know about Yifu?</h1>
 <p>Come with me...</p>
 </div>
 
 <div class="intro-section">
-<h1>He is really a tech guy, isn't he?</h1>
-<p>As a first year M.S student at Carnegie Mellon, he interested in Machine Learning, Web development, Software Engineering, and dreamed to be a full stack engineer.</p>
+<h1>To be a tech guy is cool!</h1>
+<p>As a second year CS master student at Carnegie Mellon, my interest including Software Engineering and Big Data. Now I am dreaming to be a software engineer who build something cool, and...</p>
+<div><img src="img/making_world_a_better_place.jpg" class="img-rounded" height="300" width="300"></div>
+</div>
+
+<div class="internship-section">
+<h1>Internship: Create, destroy, learn</h1>
+<p>During my summer internship at Quixey, I built a Chinese tokenizer for Quixey Chinese app search and auto suggest. It is 40% faster and 1.6% higher in DCG score compared with previous one. I also applied intellectual property for the core algorithm.</p>
+<div><img src="img/tokenizer_performance.png" class="img-rounded" height="300" width="600"></div>
 </div>
 
 <div class="competition-section">
-<h1>He wanted to do something cool. So he built a self driving car</h1>
-<p>What? He did it before Google?</p>
+<h1>Always wanted to do something cool. So I built a self driving car</h1>
+<p>What? Built that even before Google and Uber?</p>
 <div><img src="img/CPU_board.png" class="img-rounded"> <img src="img/add-128.png" style="margin:32px 10px;"> <img src="img/group.jpg" class="img-rounded"> <img src="img/equal.png" style="margin-top:32px; margin-bottom:32px"> <img src="img/question_mark.png" style="margin-top:32px; margin-bottom:32px"></div>
 </div>
 
 <div class="competition-section">
 	<div>
-	<p>Here is the video of one of their matches in Renesas Smart Car Competition.</p>
+	<p>Here is the video of one of our matches in Renesas Smart Car Competition.</p>
 	<div>
 		<iframe width="420" height="315" src="//www.youtube.com/embed/uaC2eN0Q5kY?rel=0" frameborder="1" allowfullscreen></iframe>		
 	</div>
@@ -65,18 +73,16 @@
 </div>
 
 <div class="project-section">
-	<h1>Yifu has done some interesting projects by himself - Just for fun!</h1>
-	<p>Click categorites below, found some fun!</p>
-	<div class="wrapper">
-    	<span class="text" onclick="$('#machine-learning-button').click()">Machine Learning</span> <img src="img/machine-learning-icon.png" style="margin:30px;">
-    	<span class="text" onclick="$('#web-dev-button').click()">Web Development</span> <img src="img/web-design.png" style="margin:30px;">
-    	<span class="text" onclick="$('#software-button').click()">Software Development</span> <img src="img/software_development.png" style="margin:30px;">
+	<h1>Here are some interesting projects I did myself - Just for fun!</h1>
+	<div class="wrapper" style="margin-top:50px;">
+    	<span class="text" onclick="$('#machine-learning-button').click()">Machine Learning</span> <img src="img/machine-learning-icon.png" style="margin-top:50px; margin-right:60px;">
+      <span class="text" onclick="$('#software-button').click()">Software Development</span> <img   src="img/software_development.png" style="margin-top:50px;margin-right:60px;">
+    	<span class="text" onclick="$('#web-dev-button').click()">Web Development</span> <img src="img/web-design.png" style="margin-top:50px;">
 	</div>
 </div>
 
 <div class="machine-learning-section">
 <h1>Dota 2 Counter Pick</h1>
-<p>This tool recommands heroes for you in Dota2 game.</p>
 <p>Retrieved 50000 match data using Python and MongoDB.</p>
 <p>Applyed Logistic Regression, KNN, SVM with RBF kernel.</p>
 <p>Achieved 70% accuracy of predicting match outcomes.</p>
@@ -87,8 +93,7 @@
 <div class="machine-learning-section">
 <h1>Bio Ask</h1>
 <p>Question answering system in medical field based on UIMA architecture.</p>
-<p>Implemented document retrieval using OpenNLP and Lingpipe API.</p>
-<p>Developed result evaluation system based on TF-IDF and GMAP.</p>
+<p>Implemented document retrieval using OpenNLP and Lingpipe API. Developed result evaluation system based on TF-IDF and GMAP.</p>
 <p><code><a href="https://github.com/11693-2/project-team02" style="color:white">Project Link</a></code></p>
 <img src="img/architecture.png">
 </div>
@@ -98,26 +103,6 @@
 <p>The search engine which supports both unstructured and structured query.</p>
 <p>Developed based on Apache lucene</p>
 <p>Implemented several retrieval models: BM25, Indri, Ranked Boolean</p>
-</div>
-
-
-<div class="web-dev-section">
-<h1>Dashboard</h1>
-<p>Web application for Yifu's colleagues to submit data and generate report.</p>
-<p>Used jQuery and bootstrap for UI</p>
-<p>Used Highchart and D3.js to visualize data.</p>
-<p>Implemented back-end server using Apache, PHP, MySQL</p>
-<img src="img/dashboard.png">
-</div>
-
-
-<div class="web-dev-section">
-<h1>Big Wisdom</h1>
-<p>Web-based stock price prediction application using Bloomberg API.</p>
-<p>Implemented user interface using jQuery, bootstrap, Highchart.</p>
-<p>Implemented back-end server using PHP, Python, ShellScript</p>
-<p><code><a href="https://github.com/wangyifu/Big-Wisdom" style="color:white">Project Link</a></code></p>
-<img scr="img/big_wisdom.png">
 </div>
 
 <div class="software-section">
@@ -138,13 +123,31 @@
 <img src="img/draw_something.png">
 </div>
 
-<div><h1>Contact Yifu</h1>
-<p>You are reaching here! Thanks for your time! Connect him you are interested in his story or has some "mission impossible" for him.</p>
+<div class="web-dev-section">
+<h1>Dashboard</h1>
+<p>Web application for my colleagues at VMware to submit data and generate report.</p>
+<p>Used jQuery and bootstrap for UI</p>
+<p>Used Highchart and D3.js to visualize data.</p>
+<p>Implemented back-end server using Apache, PHP, MySQL</p>
+<img src="img/dashboard.png">
+</div>
+
+
+<div class="web-dev-section">
+<h1>Big Wisdom</h1>
+<p>Web-based stock price prediction application using Bloomberg API.</p>
+<p>Implemented user interface using jQuery, bootstrap, Highchart.</p>
+<p>Implemented back-end server using PHP, Python, ShellScript</p>
+<p><code><a href="https://github.com/wangyifu/Big-Wisdom" style="color:white">Project Link</a></code></p>
+<img scr="img/big_wisdom.png">
+</div>
+
+<div><h1>Contact Me!</h1>
+<p>You are reaching here! Thanks for your time! Contact me you are interested of my skills and projects and have "mission impossible" for me.</p>
 <p><a href="mailto:yifuw@andrew.cmu.edu"><i class="fa fa-envelope"></i>Email Yifu</a></p>
 <p><a href="https://www.linkedin.com/in/yifuwang"><i class="fa fa-linkedin-square"></i>LinkedIn</a></p>
 <p><a href="https://github.com/wangyifu"><i class="fa fa-github"></i>Github</a></p>
-<p><a href="wangyifu.github.io/myblog/"><i class="fa fa-pencil"></i>Blog</a></p>
-<p><a href="Yifu_Wang_CMU_backend_intern.pdf"><i class="fa fa-file-text"></i>Resume</a></p>
+<p><a href="Yifu_Wang_CMU_SDE.pdf"><i class="fa fa-file-text"></i>Resume</a></p>
 </div>
 </div>
 <div class="up-down-arrows">
@@ -153,11 +156,12 @@
 </div>
 <div class="top-menu">
 <span class="toc-button" id="Intro-button">Intro</span>
+<span class="toc-button" id="Internship-button">Internship</span>
 <span class="toc-button" id="Competition-button">Competition</span>
 <span class="toc-button" id="Project-button">Projects</span>
 <span class="toc-button" id="machine-learning-button">Machine Learning</span>
-<span class="toc-button" id="web-dev-button">Web Development</span>
 <span class="toc-button" id="software-button">Software Development</span>
+<span class="toc-button" id="web-dev-button">Web Development</span>
 <span class="toc-button" id="Dot-button">Contact</span>
 </div>
 </body>
